@@ -44,6 +44,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         alignment: Alignment.bottomCenter,
         children: [
           PageView(
+            physics: const BouncingScrollPhysics(),
             onPageChanged: (int page) {
               setState(() {
                 currentIndex = page;
